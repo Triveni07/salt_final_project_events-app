@@ -1,0 +1,63 @@
+@import '../../../styles/variables.scss';
+
+.event-list {
+  box-shadow: $box-shadow-small;
+  width: 100%;
+  margin-bottom: 10px;
+
+  .event-list-header {
+    background: #222;
+    border-bottom: 1px solid #444;
+    color: whitesmoke;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    transition: background 150ms;
+    cursor: pointer;
+
+    &:hover {
+      background: #333;
+    }
+
+    i {
+      transform: rotate(0deg);
+      transform-origin: center;
+    }
+
+    h4 {
+      margin: 0;
+    }
+  }
+
+  .event-list-events {
+  }
+}
+
+.event-list--collapsed {
+  .event-list-events {
+    display: none;
+  }
+
+  .event-list-header {
+    i.arrow {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+
+.event-list-events > * {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  grid-gap: 10px;
+  text-align: left;
+  padding: 10px;
+  border-top-width: 5px;
+  cursor: default;
+  width: 100%;
+  transition: 200ms;
+}
+
+.my-friends .event-list-events > * {
+  background: whitesmoke;
+}

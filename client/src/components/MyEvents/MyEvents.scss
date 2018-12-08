@@ -1,0 +1,16 @@
+
+.profile {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  padding: 20px;
+
+  .profile > * {
+    width: 100%;
+  }
+}
+
+.my-friends .event-list {
+  margin-top: 10px;
+}

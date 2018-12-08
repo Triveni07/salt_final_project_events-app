@@ -1,0 +1,38 @@
+@import '../../styles/variables.scss';
+
+.content-container {
+  min-height: $content-height;
+  background: $background;
+  position: relative;
+  overflow-x: hidden;
+
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+  background: url('https://images.unsplash.com/photo-1505236858219-8359eb29e329?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d14a810136c7528ba19f04ff77b8130d&auto=format&f');
+  background-size: cover;
+  background-position: center;
+  filter: blur(5px);
+  outline: 10px solid #222;
+
+  position: absolute;
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom right, #5bd7ff, #ff758d 50%);
+    opacity: .5;
+    
+    position: absolute;
+  }
+}
+
+.content {
+  position: absolute;
+  width: 100%;
+  height: $content-height;
+  overflow: auto;
+}

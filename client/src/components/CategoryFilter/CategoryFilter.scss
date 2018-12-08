@@ -1,0 +1,36 @@
+@import '../../styles/variables.scss';
+
+.category-filters {
+  text-align: center;
+  padding: 10px;
+
+  button {
+    background: #333;
+    padding: 10px 20px;
+  }
+  
+  button[class*=Primary], button {
+    color: whitesmoke;
+    text-shadow: 1px 1px rgba(0,0,0,.4);
+    
+    &.btn-STOCKHOLM {
+     background: $stockholm;
+    }
+    
+    &.btn-PARTY {
+     background: $party; 
+    }
+    
+    &.btn-MUSIC {
+     background: $music; 
+    }
+    
+    &.btn-FAMILY {
+     background: $family; 
+    }
+
+    &.btn-ALL, &.btn-MAP {
+      background: darken($all, 15%);
+    }
+  }
+}

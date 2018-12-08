@@ -1,0 +1,75 @@
+@import '../../styles/variables.scss';
+
+.event-card {
+  background: whitesmoke;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  cursor: pointer;
+  transition: 200ms;
+  border-top: solid 10px transparent;
+
+  .event-image {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    
+    background: url('https://images.unsplash.com/photo-1505236858219-8359eb29e329?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d14a810136c7528ba19f04ff77b8130d&auto=format&fit=crop&w=2630&q=80');
+    background-size: cover;
+    background-position: center;
+  }
+
+  .event-info {
+    padding: 10px;
+    
+    i {
+      opacity: .5;
+    }
+
+    .event-info-category {
+      i {
+        margin: 0 10px;
+      }
+    }
+    
+    .event-info-title {
+      font-size: 1.4rem;
+    }
+  }
+
+  &:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+}
+
+.event-card--compact {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  grid-gap: 10px;
+  text-align: left;
+  padding: 10px;
+  border-top-width: 5px;
+  box-shadow: none;
+  cursor: default;
+
+  &:hover {
+    box-shadow: none;
+  }
+}
+
+
+.category-Music {
+  border-color: $music;
+}
+.category-Family {
+  border-color: $family;
+}
+.category-Stockholm {
+  border-color: $stockholm;
+}
+.category-Party {
+  border-color: $party;
+}
+.category-Music {
+  border-color: $music;
+}

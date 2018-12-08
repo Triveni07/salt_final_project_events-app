@@ -1,0 +1,31 @@
+
+// Brand Colors
+$primary: #508cd2;
+$secondary: hsla(339, 70%, 48%, 1);
+
+// Variations
+$primary-dark1: darken($primary, 5%);
+$primary-dark2: darken($primary, 10%);
+$primary-light1: lighten($primary, 5%);
+$primary-light2: lighten($primary, 10%);
+
+// Buttons
+$btn-padding: 10px 5px;
+
+// Sizes
+$header-height: 59px;
+$content-height: calc(100vh - 59px);
+
+// General
+$background: #dadada;
+
+// Event Colors
+$stockholm: rgb(80, 140, 210);
+$party: #ff859a;
+$music: #eec553;
+$family: #5ce697;
+$all: rgb(80, 140, 210);
+
+// Box shadows
+$box-shadow-small: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+$box-shadow-large: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);

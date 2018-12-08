@@ -1,0 +1,92 @@
+@import '../../styles/variables.scss';
+
+.navbar {
+  background: $primary;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  
+  .logo {
+    margin: 0;
+    background: darken($primary, 15%);
+    padding: 10px 20px;
+    color: whitesmoke;
+    letter-spacing: -2px;
+    text-transform: uppercase;
+  }
+
+  .navbar-links {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 100%;
+  }
+
+  .login-area {
+    display: grid; 
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    justify-content: center;
+
+    .user-name {
+      color: whitesmoke;
+      font-size: 1.1rem;
+
+      i {
+        color: whitesmoke;
+        margin: 0 10px;
+      }
+    }
+
+    button {
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: .8rem; 
+    }
+
+    .login-btn {
+      padding: 0 20px;
+    }
+
+    .logout-btn {
+      //font-size: 1rem;
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: whitesmoke;
+      opacity: .8;
+      transition: 100ms;
+      margin: 0 10px;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.nav-btn {
+  font-size: 1.2rem;
+  background: none;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  color: whitesmoke;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  height: 100%;
+  transition: 150ms;
+
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1rem; 
+
+  i {
+    font-size: .8rem;
+    margin-right: 10px;
+  }
+}
+
+.nav-btn--selected {
+  background: $secondary;
+}

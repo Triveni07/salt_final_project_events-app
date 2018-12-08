@@ -1,0 +1,51 @@
+
+.add-friends {
+  width: 100%;
+
+  .add-friends-input {
+    width: 100%;
+    padding-right: 35px;
+    padding-left: 16px;
+    line-height: 40px;
+    height: 40px;
+    border: 1px solid #CCC;
+    outline: none;
+    font: inherit;
+    appearance: none;
+    -webkit-appearance: none;
+  }
+
+  .add-friends-dropdown {
+    width: 100%;
+    background: #ffffff;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2), 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+
+    .add-friend-suggestion {
+      padding: 10px;
+      transition: 100ms;
+      cursor: pointer;
+      
+      &:hover {
+        background: #efefef;
+      }
+
+      .user-name {
+        font-weight: 600;
+      }
+
+      i {
+        margin: 0 15px;
+        opacity: .4;
+      }
+    }
+
+    .add-friend-suggestion--friend {
+      background: #7affbb;
+      cursor: default;
+      
+      &:hover {
+        background: #7affbb;
+      }
+    }
+  }
+}

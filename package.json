@@ -1,0 +1,28 @@
+{
+  "name": "salt-last-project",
+  "version": "1.0.0",
+  "description": "This repository will hold the code for the last project you will do at Salt.",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"cd client && npm start\" \"cd server && npm run restart\"",
+    "install_modules": "cd client && npm i && cd ../server && npm i",
+    "deploy": "cd client && npm run build && cd ../server && rm -r client/build && mv ../client/build client && git add . && git commit -m \"Deploy\" && git push heroku master"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saltsthlm/salt-last-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saltsthlm/salt-last-project/issues"
+  },
+  "homepage": "https://github.com/saltsthlm/salt-last-project#readme",
+  "dependencies": {
+    "concurrently": "^4.1.0",
+    "cookie-parser": "^1.4.3",
+    "google-map-react": "^1.1.1",
+    "nodemon": "^1.18.6"
+  }
+}
